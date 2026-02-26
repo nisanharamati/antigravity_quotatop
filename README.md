@@ -9,6 +9,9 @@ With changes to:
 ## Set up
 add `ag_quotatop` to your path, or add/symlink it to your /usr/bin
 
+### Using `install.sh`
+`install.sh` will symlink ag_quotatop to ag_top in `~/.local/bin/`, after which you can run it with `ag_top` or `ag_top -l [refresh]`
+
 ## Run with
 ```sh
 ag_quotatop -l [<seconds to refresh>]
