@@ -7,17 +7,24 @@ With changes to:
 - Run in a curses terminal app that shows results like top/htop
 
 ## Set up
-add `ag_quotatop` to your path, or add/symlink it to your /usr/bin
+add `ag_top` to your path, or add/symlink it to your /usr/bin
 
 ### Using `install.sh`
-`install.sh` will symlink ag_quotatop to ag_top in `~/.local/bin/`, after which you can run it with `ag_top` or `ag_top -l [refresh]`
+`install.sh` will symlink ag_top to `~/.local/bin/`, after which you can run it with `ag_top` or `ag_top -l [refresh]` or `ag_top -p/--print`
 
 ## Run with
+### default, 60 second refresh
 ```sh
-ag_quotatop -l [<seconds to refresh>]
+ag_top
 ```
 
-Default refresh is 60 seconds
+### user-provided refresh
+```sh
+ag_top -l [<seconds to refresh>]
+```
 
-To run the original levitycheck print-and-exit, use `ag_quotatop` with no args
+### Print and exit
+```sh
+ag_top -p/--print
+```
 
